@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+@*<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    One Microsoft Way<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>*@
+<div class="text-center" style="background-color:#ffffff;color:#201976">
+
+	<h2 style="color:cornflowerblue">Contact</h2>
+	<div class="row">
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<address>
+				Grow Green Technologies,<br />
+				#58-17-6/3,<br />
+				GF-3,Sanjeevayya Colony,<br />
+				Shanthinagar, NAD Kotha Road,<br />
+				Vishakapatnam.<br />
+				Andhra Pradesh state<br />
+				Pin 530 009<br />
+				@*<abbr title="Phone">P:9052229213</abbr>*@
+			</address>
+
+			<address>
+				<strong>Email:</strong>   <a href="mailto:info@growgreentechnologies.in">info@growgreentechnologies.in</a><br />
+				@*<strong>Marketing:</strong> <a href="mailto:growgreentechnologies@gmail.com">growgreentechnologies@gmail.com</a>*@
+			</address>
+		</div>
+		<div class="col-lg-4  col-md-4 col-sm-12" >
+			<div>
+				<table class="embed-responsive">
+					<tr>
+						<td class="col-sm-4 col-md-3">
+							Name :
+						</td>
+						<td class="col-sm-8 col-md-9 text-left">
+							<input type="text" placeholder="Name" />
+						</td>
+					</tr>
+					<tr>
+						<td class="col-sm-4 col-md-4">
+							Contact :
+						</td>
+						<td class="col-sm-8 col-md-8 text-left">
+							<input type="text"  placeholder="Contact" />
+						</td>
+					</tr>
+					<tr>
+						<td class="col-sm-4 col-md-4">
+							Email :
+						</td>
+						<td class="col-sm-8 col-md-8 text-left">
+							<input type="text" placeholder="Email" />
+						</td>
+					</tr>
+					<tr>
+						<td class="col-sm-4 col-md-4">
+							Details :
+						</td>
+						<td class="col-sm-8 col-md-8 text-left">
+							<textarea rows="3" placeholder="Details"></textarea>
+						</td>
+					</tr>
+
+				</table>
+				<br />
+				<br />
+				<input type="submit" class="btn-primary" name="Submit" />
+			</div>
+		</div>
+		<div class="dropdown-divider"></div>
+		<div class="col-lg-4  col-md-4 col-sm-12">
+
+			<!--Card-->
+			<div class="card card-cascade narrower">
+
+				<!--Card image-->
+				@*<div class="view view-cascade gradient-card-header peach-gradient">
+						<h5 class="mb-0">Custom map</h5>
+					</div>*@
+				<!--/Card image-->
+				<!--Card content-->
+				<div class="card-body card-body-cascade text-center">
+
+					<!--Google map-->
+					<div id="map-container-google-9" class="z-depth-1-half map-container-5 embed-responsive embed-responsive-16by9" style="height: 300px">
+						<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.025968509388!2d83.23617581417118!3d17.743415537866156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3967e2d1e523df%3A0xef9a1a6fc5270c43!2sShanti%20Nagar%2C%20NSTL%2C%20Visakhapatnam%2C%20Andhra%20Pradesh%20530009!5e0!3m2!1sen!2sin!4v1570728696699!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+					</div>
+
+
+
+				</div>
+				<!--/.Card content-->
+
+			</div>
+			<!--/.Card-->
+			<!--Grid column-->
+
+
+		</div>
+	</div>
+</div>
