@@ -4,13 +4,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grow Green Technologies</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
-	<script src="~/Scripts/jquery-3.4.1.min.js"></script>
 	<script>
-			
-		$(document).ready(function () {
-			$('.customer-logos').slick({
+		var $j = jQuery.noConflict();
+		$j(document).ready(function () {
+			$j('.customer-logos').slick({
 				slidesToShow: 4,
 				slidesToScroll: 1,
 				autoplay: true,
@@ -132,24 +133,26 @@
 	<hr />
 	<div class="container body-content col-lg-12 col-md-12 col-sm-12">
 		@RenderBody()
+
 		<div class="container">
-			<div class="row">
-				<p class="col-lg-12 col-12 col-sm-12 col-md-12">Our  Partners/ Our Clients</p>
+			<hr />
+			<div class="row text-center">
+				<p class="col-lg-12 col-12 col-sm-12 col-md-12" style="color:orangered;font-size:20px">Our  Partners/ Our Clients</p>
 			</div>
 			<section class="customer-logos slider">
-				<div class="slide"><img src="assets/Images/footer/l1.png"></div>
-				<div class="slide"><img src="assets/Images/footer/l2.jfif"></div>
-				<div class="slide"><img src="assets/Images/footer/l3.png"></div>
-				<div class="slide"><img src="assets/Images/footer/l4.jpg"></div>
-				<div class="slide"><img src="assets/Images/footer/l1.png"></div>
-				<div class="slide"><img src="assets/Images/footer/l2.jfif"></div>
-				<div class="slide"><img src="assets/Images/footer/l3.png"></div>
-				<div class="slide"><img src="assets/Images/footer/l4.jpg"></div>
+				<div class="slide"><img src="~/Images/l1.png"></div>
+				<div class="slide"><img src="~/Images/l2.jfif"></div>
+				<div class="slide"><img src="~/Images/l3.png"></div>
+				<div class="slide"><img src="~/Images/l4.jpg"></div>
+				<div class="slide"><img src="~/Images/l1.png"></div>
+				<div class="slide"><img src="~/Images/l2.jfif"></div>
+				<div class="slide"><img src="~/Images/l3.png"></div>
+				<div class="slide"><img src="~/Images/l4.jpg"></div>
 				<!-- <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-			<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-			<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-			<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-			<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div> -->
+		<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+		<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+		<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+		<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div> -->
 			</section>
 
 		</div>

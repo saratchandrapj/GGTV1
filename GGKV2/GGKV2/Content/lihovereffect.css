@@ -1,0 +1,6 @@
+﻿.hoverWrapper:hover #hoverShow1 {
+	display: block;
+}
+.hoverWrapper #hoverShow1 {
+	display: none;
+}
