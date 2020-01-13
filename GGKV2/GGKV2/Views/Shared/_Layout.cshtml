@@ -7,9 +7,34 @@
 	@Styles.Render("~/Content/css")
 	@Scripts.Render("~/bundles/modernizr")
 	<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+	<script>
+			
+		$(document).ready(function () {
+			$('.customer-logos').slick({
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				autoplay: true,
+				autoplaySpeed: 1000,
+				arrows: false,
+				dots: false,
+				pauseOnHover: false,
+				responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 2
+					}
+				}]
+			});
+		});
 
+	</script>
 </head>
-<body style="background-color:white">
+<body style="background-color:white;overflow-x:hidden;">
 	@*#309696*@
 	@*background-image:url('../../Images/images (3).jfif');background-repeat:no-repeat;background-position: center;background-size: cover;*@
 	@*DC3D24*@
@@ -25,13 +50,13 @@
 
 	<div class="row">
 			<div class="col-lg-6 col-md-4 col-sm-12 col-12">
-				<div class="row no-gutters">
+				<div class="row">
 					<div class="col-lg-4  text-center">
 						<img src="~/Images/Logo.png" class="img-fluid" style="width:50%;height:100%;" />
 					</div>
 					<div class="col-lg-8 col-sm-12 col-12 text-lg-left text-center">
-						<span class="" style="font-size:20px;color:#60A043"><span style="font-size:30px;">G</span>ROW <span style="font-size:30px;">G</span>REEN <span style="font-size:28px;">T</span>ECHNOLOGIES</span><br/>
-						<div class="row no-gutters">
+						<span style="font-size:20px;color:#60A043"><span style="font-size:30px;">G</span>ROW <span style="font-size:30px;">G</span>REEN <span style="font-size:28px;">T</span>ECHNOLOGIES</span><br/>
+						<div class="row" style="overflow-x:hidden;">
 							<div class="col-lg-4"></div>
 							<div class="col-lg-8 col-sm-12 col-12 text-lg-left text-center">
 								<span style="font-size:15px;color:cornflowerblue;margin-left:-10px">Engineers & Contractors</span>
@@ -46,7 +71,7 @@
 		</div>
 		</div>
 	<hr class="d-block d-sm-none" style="height:0px;" />
-	<div class="container col-lg-12 col-md-12 col-sm-12">
+	<div class="container-fluid col-lg-12 col-md-12 col-sm-12">
 		<nav class="navbar navbar-expand-lg navbar-light">
 			@*<a class="navbar-brand" href="#">Navbar</a>*@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -107,6 +132,27 @@
 	<hr />
 	<div class="container body-content col-lg-12 col-md-12 col-sm-12">
 		@RenderBody()
+		<div class="container">
+			<div class="row">
+				<p class="col-lg-12 col-12 col-sm-12 col-md-12">Our  Partners/ Our Clients</p>
+			</div>
+			<section class="customer-logos slider">
+				<div class="slide"><img src="assets/Images/footer/l1.png"></div>
+				<div class="slide"><img src="assets/Images/footer/l2.jfif"></div>
+				<div class="slide"><img src="assets/Images/footer/l3.png"></div>
+				<div class="slide"><img src="assets/Images/footer/l4.jpg"></div>
+				<div class="slide"><img src="assets/Images/footer/l1.png"></div>
+				<div class="slide"><img src="assets/Images/footer/l2.jfif"></div>
+				<div class="slide"><img src="assets/Images/footer/l3.png"></div>
+				<div class="slide"><img src="assets/Images/footer/l4.jpg"></div>
+				<!-- <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+			<div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+			<div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+			<div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+			<div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div> -->
+			</section>
+
+		</div>
 		<hr />
 		<footer class="col-lg-12 text-left">
 			<p style="color:#60A043"><strong> &copy; @DateTime.Now.Year - GROW GREEN TECHNOLOGIES </strong></p>

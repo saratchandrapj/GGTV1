@@ -228,9 +228,12 @@
     <Content Include="Images\6.jfif" />
     <Content Include="Images\7.jpg" />
     <Content Include="Images\download %281%29.jfif" />
+    <Content Include="Images\download %282%29.jfif" />
     <Content Include="Images\download.jfif" />
     <Content Include="Images\images %281%29.jfif" />
     <Content Include="Images\images %282%29.jfif" />
+    <Content Include="Images\images %283%29.jfif" />
+    <Content Include="Images\images %284%29.jfif" />
     <Content Include="Images\images.jfif" />
     <Content Include="Images\index\Double deck Floating roof.jpeg" />
     <Content Include="Images\index\Doubler plates for Iron Ore bins.png" />
@@ -244,7 +247,12 @@
     <Content Include="Images\index\Roof Drain %28JKRD%29.jpeg" />
     <Content Include="Images\index\Tank Bottom plate repair work.jpeg" />
     <Content Include="Images\index\Welding.jpeg" />
+    <Content Include="Images\l1.png" />
+    <Content Include="Images\l2.jfif" />
+    <Content Include="Images\l3.png" />
+    <Content Include="Images\l4.jpg" />
     <Content Include="Images\Logo.png" />
+    <Content Include="Images\Logo2.JPG" />
     <Content Include="Images\new.jpg" />
     <Content Include="Images\new1.jpg" />
     <Content Include="Images\new2.jpg" />
